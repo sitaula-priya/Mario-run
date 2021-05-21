@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="audio2.html">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.mainMarioBg{
+			width: 100%;
+			height: 100vh;
+			background-image: url("background.png");
+			background-size: 100% 100%;
+			position: relative;
+		}
+		.mario img{
+			position: absolute;
+			bottom: 55px;
+			animation: mariorun;
+			animation-duration: 6s;
+			animation-iteration-count: 3;
+			animation-timing-function: linear;
+
+		}
+		@keyframes mariorun{
+			100%{left: 88%;
+
+			}
+			0%{left: 0%;
+
+			}
+		}
+		h2{
+			color: white;
+			text-transform: uppercase;
+			font-size: 2em;
+			font-family: "Bangers", cursive;
+			letter-spacing: 2px;
+			position: absolute;
+			top:20%;
+			left: 40%;
+			animation: mariotext 4s linear ;
+			animation-iteration-count: 5;
+			animation-delay: 1s;
+
+		}
+		@keyframes mariotext{
+			0%{font-size: 2em}
+			100%{
+				font-size: 4em; left: 30%;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="mainMarioBg">
+		<div class="mario">
+			<img src="GIF.gif" width="150px">
+			<h2>mario run run</h2>
+		</div>
+	</div>
+
+</body>
+</html>
